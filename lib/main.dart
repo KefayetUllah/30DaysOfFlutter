@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main() {
- runApp(MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  int days = 30;
+  String name = "CodeClicks";
+  double pi = 3.1416;
+  bool isMale = true;
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +16,7 @@ class MyApp extends StatelessWidget {
       home: Material(
         child: Center(
           child: Container(
-            child: Text("Welcome to 30 days of Flutter"),
+            child: Text("Welcome to $days days of Flutter by $name"),
           ),
         ),
       ),
