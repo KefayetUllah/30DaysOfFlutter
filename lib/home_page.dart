@@ -6,12 +6,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
         child: Container(
           child: Text("Welcome to $days days of Flutter by $name"),
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
