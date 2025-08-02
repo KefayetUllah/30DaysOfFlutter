@@ -1,3 +1,5 @@
+import 'dart:nativewrappers/_internal/vm/lib/ffi_patch.dart';
+
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -16,7 +18,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20.0),
             Text(
               "Welcome",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -45,7 +47,8 @@ class LoginPage extends StatelessWidget {
                       print("Hi CodeFlick");
                     },
                     child: Text("Login"),
-                    style: TextButton.styleFrom(),
+
+                    style: TextButton.styleFrom(minimumSize: Size(120, 40)),
                   ),
                 ],
               ),
