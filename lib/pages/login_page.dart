@@ -28,10 +28,19 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 TextFormField(
+                  obscureText: true,
                   decoration: InputDecoration(
                     hintText: "Enter Password",
                     labelText: "Password",
                   ),
+                ),
+                SizedBox(height: 20.0),
+                ElevatedButton(
+                  onPressed: () {
+                    print("Hi CodeFlick");
+                  },
+                  child: Text("Login"),
+                  style: TextButton.styleFrom(),
                 ),
               ],
             ),
