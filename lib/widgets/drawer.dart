@@ -8,20 +8,24 @@ class MyDrawer extends StatelessWidget {
     final imageUrl =
         "https://tse1.mm.bing.net/th/id/OIP.iRGEaApnYWY8opV47Gf_lQHaHb?pid=Api&P=0&h=180";
     return Drawer(
-      child: ListView(
-        children: [
-          DrawerHeader(
-            padding: EdgeInsets.zero,
-            child: UserAccountsDrawerHeader(
-              margin: EdgeInsets.zero,
-              accountName: Text("Kefayet Ullah"),
-              accountEmail: Text("kefayet107@gmail.com"),
-              currentAccountPicture: CircleAvatar(
-                backgroundImage: NetworkImage(imageUrl),
+      child: Container(
+        color: Colors.deepPurple,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              padding: EdgeInsets.zero,
+              child: UserAccountsDrawerHeader(
+                margin: EdgeInsets.zero,
+                accountName: Text("Kefayet Ullah"),
+                accountEmail: Text("kefayet107@gmail.com"),
+                currentAccountPicture: CircleAvatar(
+                  backgroundImage: NetworkImage(imageUrl),
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
