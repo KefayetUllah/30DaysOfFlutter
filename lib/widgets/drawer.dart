@@ -5,6 +5,19 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Drawer(
+      child: ListView(
+        children: [
+          DrawerHeader(
+            padding: EdgeInsets.zero,
+            child: UserAccountsDrawerHeader(
+              margin: EdgeInsets.zero,
+              accountName: Text("Kefayet Ullah"),
+              accountEmail: Text("kefayet107@gmail.com"),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
