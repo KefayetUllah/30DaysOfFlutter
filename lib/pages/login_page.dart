@@ -83,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                         } else if (value.length < 6) {
                           return "Password should be at least 6 characters";
                         }
-                        return null;
+                        return null; 
                       },
                     ),
                     SizedBox(height: 20.0),
