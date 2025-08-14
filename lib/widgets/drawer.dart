@@ -5,6 +5,8 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final imageUrl =
+        "https://tse1.mm.bing.net/th/id/OIP.iRGEaApnYWY8opV47Gf_lQHaHb?pid=Api&P=0&h=180";
     return Drawer(
       child: ListView(
         children: [
@@ -14,6 +16,9 @@ class MyDrawer extends StatelessWidget {
               margin: EdgeInsets.zero,
               accountName: Text("Kefayet Ullah"),
               accountEmail: Text("kefayet107@gmail.com"),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: NetworkImage(imageUrl),
+              ),
             ),
           ),
         ],
